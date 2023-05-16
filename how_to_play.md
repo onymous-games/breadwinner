@@ -25,7 +25,7 @@ In a not so distant future where all food production is controlled by machines, 
 
 # Goal of the game
 
-Use Drones to build factories, transport and unload the bread using a Harvester. Use Locusts, Sentinels, and Shields to protect your harvests and prevent your rival company from making progress.
+Use bots to plant bread-seeds, transport and unload the bread using a Harvester. Use Locusts, Soldiers, and Shields to protect your harvests and prevent your rival company from making progress.
 
 # On your turn
 
@@ -45,11 +45,11 @@ Summary:
 Any bot on a Delivery tile or Land tile, may move to a Land or Delivery tile that:
 - Is orthogonally adjacent (up/down/left/right, not diagonal).
 - With less than two bots.
-- Without an rival Shield.
+- Without a rival Shield.
 
 Exceptions:
-- Sentinels may move onto a Land or Delivery tile with two bots as long as they deactivate a bot on that tile.
-- Sentinels may move onto a Land or Delivery tile with a shield bot as long as they deactivate the shield bot on that tile.
+- Soldiers may move onto a Land or Delivery tile with two bots as long as they deactivate a bot on that tile.
+- Soldiers may move onto a Land or Delivery tile with a shield bot as long as they deactivate the shield bot on that tile.
 - Shields may not move onto a tile with any rival unit.
 - Shields may not move onto a tile with a different friendly shield bot.
 
@@ -167,22 +167,22 @@ Requirements:
 
 Find the weak spot in the Harvester's armor and move in toward the engine. When you find it, spew chemicals to melt the battery and cause the Harvester to explode. Deactivate the Locust and Harvester and move any Crop chips the Harvester carried to the Discarded Harvest pile.
 
-## Sentinel
+## Soldier
 
-Looks something like a hovering magic wand - one end for the components and the other for a series of coils. Designed to move swiftly toward any bot that needs to be deactivated and deliver an electromagnetic pulse targeted at the bot's core. Ironically, delivering this pulse deactivates the Sentinel as well, which is why the designers have taken extra care to strip out all resources possible from the design.
+Looks something like a hovering magic wand - one end for the components and the other for a series of coils. Designed to move swiftly toward any bot that needs to be deactivated and deliver an electromagnetic pulse targeted at the bot's core. Ironically, delivering this pulse deactivates the Soldier as well, which is why the designers have taken extra care to strip out all resources possible from the design.
 
 ### Action
 
 #### Pulse
 
 > Notes: 
-> - A Sentinel may use pulse even if it has moved this turn.
-> - A Sentinel may move onto a square with two other units if it uses pulse to bring that number down to two or less.
+> - A Soldier may use pulse even if it has moved this turn.
+> - A Soldier may move onto a square with two other units if it uses pulse to bring that number down to two or less.
 
 Requirements:
 - A tile with another bot
 
-Take aim and shoot the electromagnetic gun toward a target bot. If there is a rival Shield on the tile, the Pulse hits the Shield. Deactivate the Sentinel and an additional bot on the same tile.
+Take aim and shoot the electromagnetic gun toward a target bot. If there is a rival Shield on the tile, the Pulse hits the Shield. Deactivate the Soldier and an additional bot on the same tile.
 
 ## Shield
 

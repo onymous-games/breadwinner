@@ -1,9 +1,9 @@
 Bots:
-1. SeedBot
-1. HarvesterBot
-1. LocustBot
-1. SoldierBot
-1. ShieldBot
+1. Drone
+1. Harvester
+1. Locust
+1. Soldier
+1. Shield
 1. Factory Error
 
 On your Turn:
@@ -13,6 +13,6 @@ On your Turn:
 1. Deactivate Bots
 
 Handy tips:
-- Moving a ShieldBot to the enemy's starting zone prevents everything except a SoldierBot from leaving the factory
+- Moving a Shield to the rival's Delivery tile prevents everything except a Soldier from leaving the factory
 - A bot must end its turn in a way which leaves no more than two bots on any tile.
 - Use the BotFactory distances to your advantage. Production/Defensive bots often travel a shorter distance than offensive bots.
