@@ -29,8 +29,6 @@ Use bots to plant bread-seeds, transport and unload the bread using a Harvester.
 
 # On your turn
 
-Summary: 
-
 1. Each bot on the board may move or take an action
 1. Move any bots from BotFactory tiles
 1. Build new bots
@@ -68,21 +66,25 @@ The following additional rules apply for movement when moving a bot from a BotFa
 
 ## Build new bots
 
-Role any of your dice which are not in a factory or on the map. The face-up numbers correspond to the bots you may build this turn. Choose desirable bots (other than Factory Errors) which you rolled and place these in empty BotFactories.
+Role any of your dice which are not in a factory or on the map. The face-up numbers correspond to the bots you may build this turn. Choose desirable bots (other than Research & Developments) which you rolled and place these in empty BotFactories.
+
+Bots:
+1. Drone
+1. Harvester
+1. Locust
+1. Soldier
+1. Shield
+1. Research & Development
 
 ## Deactivate friendly bots
 
 Deactivate any bot on the map or on a BotFactory tile. These bots may be re-rolled next turn.
 
-# Bot Dictionary
+# Bot Abilities
 
 ## Drone
 
-A small, flying bot equipped with a single bread seed. That's right, in the future, you don't bake bread. You grow it.
-
-### Actions:
-
-#### Plant 
+### Plant 
 
 Requirements:
 - Drone must be on a Land tile.
@@ -90,7 +92,7 @@ Requirements:
 
 On a Land tile without a planted crop, place a face-down Crop chip and deactivate the Drone. If there are no Crop chips in the Crop chip pile, reclaim all Crop chips from the Discarded Harvest pile, mix these, and use one.
 
-#### Aerate
+### Aerate
 
 Requirements:
 - Tile must have the Hardened condition
@@ -99,11 +101,7 @@ Spend the drone's battery aerating the hardened ground so that a sibling bot can
 
 ## Harvester
 
-A large, truck-like bot equipped with two harvesting prongs attached to the front and a storage area in the back. It almost looks like an over-sized, robot scarab beetle with sharp mandibles and tough armor.
-
-### Actions
-
-#### Harvest
+### Harvest
 
 Requirements:
 - Must not already be carrying a harvest.
@@ -113,7 +111,7 @@ On a tile with a Crop chip, turn the Crop chip face-up and place it on top of th
 
 The bot is now considered to be carrying a harvest.
 
-#### Cannibalize
+### Cannibalize
 
 Requirements: 
 - Must not be carrying a harvest.
@@ -122,13 +120,14 @@ On a tile with another Harvester, use this Harvester's mandibles to rip off the 
 
 This bot is now considered to be carrying a harvest.
 
-#### Unload
+### Unload
 
 > Note: A Harvester may unload even if it has moved this turn.
 
 Requirements:
 - Must be carrying a harvest.
 - Tile must not have another unloaded Harvest.
+- You may not unload onto a delivery tile with two other bots.
 
 Drop harvested Crop chips onto the current tile the Harvester stands on. These Crop chips turn face-down. Drones cannot plant on this tile because they are not strong enough to reach through the harvest to the soil.
 
@@ -139,11 +138,7 @@ If this Harvester unloads on the Delivery tile closest to you:
 
 ## Locust
 
-Locusts are swarms of flying nanobots filled with various hazardous chemicals designed to keep the rival company from being able to harvest any bread.
-
-### Actions:
-
-#### Dehydrate Land
+### Poison Land
 
 Requirements:
 - Must be on a Land tile.
@@ -151,7 +146,7 @@ Requirements:
 
 Use the chemicals in the Locust to harden the ground and make it untenable. Deactivate the Locust and add the Hardened condition by placing Hardened-ground chip on the tile.
 
-#### Toxic Pollination
+### Toxic Pollination
 
 Requirements:
 - Must be on a Land tile.
@@ -159,7 +154,7 @@ Requirements:
 
 Flit from bread-plant to bread-plant catalyzing a reaction which gets more destructive as it spreads to each bread-bud. Deactivate the Locust, remove the Crop chip.
 
-#### Meltdown
+### Meltdown
 
 Requirements:
 - Must be on a Land tile.
@@ -169,11 +164,7 @@ Find the weak spot in the Harvester's armor and move in toward the engine. When 
 
 ## Soldier
 
-Looks something like a hovering magic wand - one end for the components and the other for a series of coils. Designed to move swiftly toward any bot that needs to be deactivated and deliver an electromagnetic pulse targeted at the bot's core. Ironically, delivering this pulse deactivates the Soldier as well, which is why the designers have taken extra care to strip out all resources possible from the design.
-
-### Action
-
-#### Pulse
+### Pulse
 
 > Notes: 
 > - A Soldier may use pulse even if it has moved this turn.
@@ -186,8 +177,10 @@ Take aim and shoot the electromagnetic gun toward a target bot. If there is a ri
 
 ## Shield
 
-Shields look like slender pillars with legs and arms. When the Shield turns itself on by using an arm to press the "On" button, the legs dig deep into the ground and a beam of light shoots from the top. A protective bubble of liquid polymers forms around the Shield and other bots in the vicinity. This liquid is tuned to the factories from which it came so that friendly units pass through the bubble, but rival bots are pushed away.
+> Note: Cannot move onto a tile with a rival unit
 
-## Factory Error
+Prevents rival units from entering the tile.
 
-All assembly lines fail at some point. Even ones controlled by machines. My theory is that the robot scientists sometimes want cute little robot pets and just claim they're factory errors... At least that would explain why a sixth of the robots seem to come out "wrong." 
+## Research & Development
+
+If you roll three Research & Development bots, you may spend them to build a bot of your choosing. Choose one of the sixes and turn the number face up. The remaining two Research & Development bots have to be rerolled next turn if spent.
