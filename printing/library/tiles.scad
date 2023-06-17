@@ -1,7 +1,7 @@
 include <baseplate.scad>
-include <variables.scad>
 include <calculate.scad>
 include <slots.scad>
+include <variables.scad>
 
 module tile_delivery()
 {
@@ -22,12 +22,12 @@ module tile_land()
     }
 }
 
-module tile_factory_number(num) 
+module tile_factory_number(num)
 {
     inlay(shallow_slot_height)
     {
         base_plate();
-        translate([ 0, die_slot_y, 0]) die_slot();
-        translate([ -1 * token_font_size * 1.16, separator, 0]) linear_extrude(tile_height) text(text = num);
-    }   
+        translate([ 0, die_slot_y, 0 ]) die_slot();
+        translate([ 0, separator, 0 ]) linear_extrude(tile_height) text(text = num, halign = "center", size = tile_font_size);
+    }
 }

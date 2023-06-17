@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Note: This assumes you're running the script from the parent folder of printing.
+# This is so that vscode can use it as a default build script.
+
 # Create output directory
 rm -rf ./printing/stls && mkdir -p ./printing/stls
 

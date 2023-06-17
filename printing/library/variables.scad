@@ -5,7 +5,9 @@
 // 0.2 to die_size if they are not found to be uniform.
 
 // The width, length, height of your dice.
-die_size = 7.4;
+// 7.8 = 7-8mm dice
+// 12.4 = chessex 36 pack of dice
+die_size = 12.4;
 
 // How much wiggle room will be given to the die slot and the token slot.
 wiggle_width = 0.4;
@@ -35,6 +37,8 @@ die_slot_left_x = -1 * (die_slot_width / 2) - separator;
 base_plate_size = (die_slot_width * 2) + separator;
 inset_width = base_plate_size - separator;
 inset_depth = tile_height - separator;
+
+tile_font_size = (base_plate_size - separator) / 2;
 
 shallow_slot_height = (tile_height - inset_depth) / 2;
 
