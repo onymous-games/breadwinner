@@ -22,22 +22,12 @@ module tile_land()
     }
 }
 
-module tile_factory_base()
-{
-    inlay(slot_height)
-    {
-        base_plate();
-        translate([ 0, die_slot_y, 0]) die_slot();
-        translate([ -4, separator, 0]) linear_extrude(10)  text(text = "1");
-    }
-}
-
 module tile_factory_number(num) 
 {
     inlay(shallow_slot_height)
     {
         base_plate();
         translate([ 0, die_slot_y, 0]) die_slot();
-        translate([ -4, separator, 0]) linear_extrude(height) text(text = num);
+        translate([ -1 * token_font_size * 1.16, separator, 0]) linear_extrude(tile_height) text(text = num);
     }   
 }

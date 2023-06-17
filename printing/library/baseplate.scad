@@ -2,7 +2,7 @@ include <variables.scad>
 
 module base_plate__blank(width)
 {
-    rotate(90) linear_extrude(height) circle(width, $fn = base_plate_sides);
+    rotate(90) linear_extrude(tile_height) circle(width, $fn = base_plate_sides);
 }
 
 module base_plate__block()
